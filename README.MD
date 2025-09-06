@@ -7,7 +7,7 @@ cc -o nob nob.c && ./nob
 
 # Run (defaults: window 00:00–24:00, no min length)
 ```
-./free_slots data/cal1.csv data/cal2.csv > free_slots.csv
+./free_slots cal1.csv cal2.csv > free_slots.csv
 ```
 
 # With a working window and minimum slot length (e.g., ≥ 30 min)
