@@ -192,7 +192,7 @@ static int merge_day_intervals(int ymd, int start, int end) {
 
 static void print_slot(int ymd, int s, int e) {
     int y = ymd / 10000, m = (ymd / 100) % 100, d = ymd % 100;
-    printf("%04d-%02d-%02d,%02d:%02d,%02d:%02d,%d\n", y, m, d, s / 60, s % 60,
+    printf("%04d-%02d-%02d   %02d:%02d   %02d:%02d   %d\n", y, m, d, s / 60, s % 60,
            e / 60, e % 60, e - s);
 }
 
@@ -300,7 +300,8 @@ int main(int argc, char *argv[]) {
             return 1;
         }
 
-    printf("Date,Start,End,Duration_min\n");
+    printf("Date         Start   End     Durmation(min)\n");
+    printf("-------------------------------------------\n");
     if (!g_events.len) return 0;
 
     qsort(g_events.data, g_events.len, sizeof(Event), compare_events);

@@ -2104,7 +2104,7 @@ NOBDEF bool nob_set_current_dir(const char *path)
 #if defined(_WIN32) && !defined(NOB_NO_MINIRENT)
 struct DIR
 {
-    HANDLE hFind;
+    HANDLE hFind
     WIN32_FIND_DATA data;
     struct dirent *dirent;
 };

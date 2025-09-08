@@ -6,7 +6,7 @@ int main(int argc, char **argv) {
     Nob_Cmd cmd = {0};
 
     nob_cmd_append(&cmd, "cc", "-std=c99", "-O2", "-Wall", "-Wextra", "-o",
-                   "free_slots", "calender_merge.c");
+                   "freeslots", "calender_merge.c");
     if (!nob_cmd_run(&cmd)) return 1;
 
     return 0;

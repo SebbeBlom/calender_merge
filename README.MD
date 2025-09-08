@@ -30,20 +30,20 @@ cc -o nob nob.c && ./nob
 
 # Find all free slots in default window (00:00–24:00)
 ```
-./freeslots schedule.csv
+./freeslots cal1.csv
 ```
 
 # Only consider free slots longer than 30 minutes
 ```
-./freeslots -m 30 schedule.csv
+./freeslots -m 30 cal1.csv
 ```
 
 # Limit search to working hours (09:00–17:00)
 ```
-./freeslots -w 09:00-17:00 schedule.csv
+./freeslots -w 09:00-17:00 cal1.csv
 ```
 
 # Merge multiple schedules
 ```
-./freeslots -w 09:00-17:00 -m 15 team1.csv team2.csv team3.csv
+./freeslots -w 09:00-17:00 -m 15 cal1.csv cal2.csv cal3.csv
 ```
