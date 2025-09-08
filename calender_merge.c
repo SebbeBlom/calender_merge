@@ -192,8 +192,8 @@ static int merge_day_intervals(int ymd, int start, int end) {
 
 static void print_slot(int ymd, int s, int e) {
     int y = ymd / 10000, m = (ymd / 100) % 100, d = ymd % 100;
-    printf("%04d-%02d-%02d   %02d:%02d   %02d:%02d   %d\n", y, m, d, s / 60, s % 60,
-           e / 60, e % 60, e - s);
+    printf("%04d-%02d-%02d   %02d:%02d   %02d:%02d   %d\n", y, m, d, s / 60,
+           s % 60, e / 60, e % 60, e - s);
 }
 
 static void print_free_slots(int ymd, int start, int end, int minlen) {
